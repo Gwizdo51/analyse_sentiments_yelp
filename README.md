@@ -19,7 +19,7 @@ From this we can predict sentiment analysis for géneral and specific customers.
 # Requirement :
 
 - You'll need Python 3.8.8 and 
-- I recomand you to install it in a Virtual Machine, like conda venv for exemple
+- It's recommended to install it in a Virtual environment
 
 ```bash
 $ sudo apt install python3.8.8
