@@ -57,8 +57,6 @@ $ pip install requirements.txt
 
 [Matplotlib documentation](https://matplotlib.org/)
 
-[Seaborn documentation](https://seaborn.pydata.org/)
-
 [Pandas documentation ](https://pandas.pydata.org/docs/)
 
 
