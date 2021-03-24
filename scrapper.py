@@ -96,7 +96,7 @@ def scrapper(activity: str, location: str):
                 print("some businesses")
                 number_pages = int(soup.select("div.text-align--center__09f24__1P1jK:nth-child(2) > span:nth-child(1)")[0].get_text().split()[-1])
 
-            # print(number_pages)
+            print("number of pages:", number_pages)
             
             break
             
