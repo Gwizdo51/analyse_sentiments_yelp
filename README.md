@@ -31,8 +31,7 @@ $ pip install requirements.txt
 # How to use the API :
 
 - You can use the command line : <u> uvicorn API:app </u> in your terminal to start the API.
-- Go to the url "http://localhost:8000/?activity_field=Restaurants&location=Reims"
-- After replacing "Restaurants" and "Reims" with desired activity field and location.
+- Go to the url "http://localhost:8000/?activity_field=Restaurants&location=Reims", after replacing "Restaurants" and "Reims" with desired activity field and location.
 
 ```python
 #------------- User settings ------------------------------------------------#
