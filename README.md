@@ -16,12 +16,24 @@ The first step consists to track establishment data like the reviews and rating 
 
 From this we can predict sentiment analysis for géneral and specific customers.
 
+# Requirement :
+
+- You'll need Python 3.8.8 
+
+```bash
+$ sudo apt install python3.8.8
+
+$ pip install requirements.txt
+```
+
+
 # How to use the API :
 
-- You can use the command line : <u> uvicorn API:app --reload </u> in your terminal to start the API.
-- Choose the location by taping .....
-- 
--
+- You can use the command line : <u> uvicorn API:app </u> in your terminal to start the API.
+- Go to the url "http://localhost:8000/?activity_field=Restaurants&location=Reims"
+- After replacing "Restaurants" and "Reims" with desired activity field and location.
+
+- All modules required are in requirements.txt
 
 ```python
 #------------- User settings ------------------------------------------------#
@@ -30,15 +42,7 @@ From this we can predict sentiment analysis for géneral and specific customers.
 # command line : uvicorn API:app --reload
 
 #-----------------------------------------------------------------------------#
-```
 
-
-## Scraping Yelp.fr by using BeautifulSoup4
-
-- install the following libraries
-
-```bash
-$ pip install BeautifulSoup4
 ```
 
 # Resources
@@ -53,11 +57,12 @@ $ pip install BeautifulSoup4
 
 [Matplotlib documentation](https://matplotlib.org/)
 
-[Seaborn documentation](https://seaborn.pydata.org/)
-
 [Pandas documentation ](https://pandas.pydata.org/docs/)
 
 
 # ToDo 
 
-- 
+- Incorporate interactive map with sentiment area arround the choosen. 
+
+- Create new set of weights for camenBERT model from specific datasets.
+
