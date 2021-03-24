@@ -106,8 +106,8 @@ def scrapper(activity: str, location: str):
             print("error in requested page, new try ...")
 
     # for every page available ...
-    # for current_page_number in range(number_pages):
-    for current_page_number in range(1):
+    for current_page_number in range(number_pages):
+    # for current_page_number in range(1):
         
         # get the new search page if not the first one (that we already have)
         while True:
