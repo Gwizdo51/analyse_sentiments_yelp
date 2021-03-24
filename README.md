@@ -18,7 +18,8 @@ From this we can predict sentiment analysis for géneral and specific customers.
 
 # Requirement :
 
-- You'll need Python 3.8.8 
+- You'll need Python 3.8.8 and 
+- I recomand you to install it in a Virtual Machine, like conda venv for exemple
 
 ```bash
 $ sudo apt install python3.8.8
@@ -32,8 +33,6 @@ $ pip install requirements.txt
 - You can use the command line : <u> uvicorn API:app </u> in your terminal to start the API.
 - Go to the url "http://localhost:8000/?activity_field=Restaurants&location=Reims"
 - After replacing "Restaurants" and "Reims" with desired activity field and location.
-
-- All modules required are in requirements.txt
 
 ```python
 #------------- User settings ------------------------------------------------#
