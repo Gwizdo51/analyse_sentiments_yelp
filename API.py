@@ -24,6 +24,10 @@ def root(activity_field: str = None, location: str = None):
 
     if activity_field == None or location == None:
         result = []
+    # elif activity_field == "Restaurants" and location == "Reims":
+    #     df_analysed = pd.read_csv("restaurants_reims_reviews_analysed.csv")
+    #     df_businesses = pd.read_csv("restaurants_reims.csv")
+    #     return json_maker.json_maker(activity_field, location, df_businesses, df_analysed)
     else:
         # scrap the data and store it in dataframes
         print("scraping starting ...")
