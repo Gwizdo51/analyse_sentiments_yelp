@@ -89,7 +89,7 @@ def scrapper(activity: str, location: str):
             if len(soup.find_all("h3", class_="css-ve950e")) == 1:
                 print("not a place")
                 number_pages = 0
-            elif len(soup.select("ul.undefined:nth-child(1)")[0].find_all("li", class_="border-color--default__09f24__1eOdn")) == 5:
+            elif len(soup.select("ul.undefined:nth-child(1)")[0].find_all("li", class_="border-color--default__09f24__1eOdn")) == 6:
                 print("no businesses")
                 number_pages = 0
             else:
@@ -136,9 +136,11 @@ def scrapper(activity: str, location: str):
                 raise
             except:
                 print("error in requested page, new try ...")
+
+        print("number_of_businesses:", len(businesses) - 6)
         
         # for each business in the page ...
-        for index_business in range(len(businesses) - 5):
+        for index_business in range(len(businesses) - 6):
     #     for index_business in range(1):
             
             # set business_id
