@@ -209,7 +209,7 @@ def scrapper(activity: str, location: str):
                     sleep_progress(sleep_time)
 
                     # get the number of pages of french reviews, if there are any
-                    if len(business_soup.select("ul.undefined:nth-child(4)")[0].find_all("li", class_="margin-b5__373c0__2ErL8 border-color--default__373c0__2oFDT")) == 0:
+                    if len(business_soup.select("ul.undefined:nth-child(4)")[0].find_all("li")) == 0:
                         print("no french reviews")
                         number_pages_review = 0
                     else:
@@ -246,7 +246,7 @@ def scrapper(activity: str, location: str):
                             sleep_progress(sleep_time)
 
                         # create a soup "reviews" that will hold all the reviews of the page
-                        reviews = business_soup.select("ul.undefined:nth-child(4)")[0].find_all("li", class_="margin-b5__373c0__2ErL8 border-color--default__373c0__2oFDT")
+                        reviews = business_soup.select("ul.undefined:nth-child(4)")[0].find_all("li")
                         print("number of reviews :", len(reviews))
                         
                         break
